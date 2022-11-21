@@ -4,7 +4,6 @@ import 'package:sellar_e_commerce/eCommerce/e_com_item_description.dart';
 import 'package:sellar_e_commerce/models/product_item.dart';
 
 import '../k_padding.dart';
-import '../responsive.dart';
 import 'items/categories.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -25,6 +24,7 @@ class _ECommerceItemsState extends State<ECommerceItems> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.black,
       key: _scaffoldKey,
       endDrawer: ConstrainedBox(
         constraints: BoxConstraints(maxWidth: 250),
@@ -32,7 +32,7 @@ class _ECommerceItemsState extends State<ECommerceItems> {
       ),
       body: Container(
         padding: EdgeInsets.only(top: kIsWeb ? kPadding : 0),
-        color: Theme.of(context).accentColor,
+        color: Theme.of(context).colorScheme.secondary,
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

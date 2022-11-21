@@ -50,7 +50,7 @@ class _CategoriesState extends State<Categories> {
                     backgroundColor: MaterialStateProperty.all(
                         selectedIndex == index
                             ? Colors.white.withOpacity(0.8)
-                            : Theme.of(context).accentColor)),
+                            : Theme.of(context).colorScheme.secondary)),
                 child: Text(
                   categories[index],
                   style: TextStyle(

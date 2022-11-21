@@ -17,7 +17,7 @@ class ECommerceDrawer extends StatelessWidget {
     return Container(
       height: double.infinity,
       padding: EdgeInsets.only(top: kIsWeb ? kPadding : 0),
-      color: Theme.of(context).accentColor,
+      color: Theme.of(context).colorScheme.secondary,
       child: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: kPadding),
@@ -78,7 +78,8 @@ class ECommerceDrawer extends StatelessWidget {
                           vertical: kPadding,
                         ),
                       ),
-                      backgroundColor: MaterialStateProperty.all(Colors.white.withOpacity(0.8))),
+                      backgroundColor: MaterialStateProperty.all(
+                          Colors.white.withOpacity(0.8))),
                   child: Text(
                     "Register",
                     style: TextStyle(color: Theme.of(context).primaryColor),
@@ -139,7 +140,6 @@ class ECommerceDrawer extends StatelessWidget {
                 title: "Advertising",
                 icon: Icons.account_box_outlined,
               ),
-
               SizedBox(height: kPadding * 2),
             ],
           ),
